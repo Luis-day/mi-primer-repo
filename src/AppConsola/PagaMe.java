@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class PagaMe {
     //Datos Clase
     Deudor [] deudor = new Deudor [100];
-    int numDeudores = 0;
+    int numDeudor = 0;
     
     public static void main (String [] args) {
         PagaMe pagame = new PagaMe();
@@ -57,7 +57,7 @@ public class PagaMe {
     
     public void mostrarDeudores(){
         System.out.println("---------------------PagaMe: Mostrar deudores--------------------");
-        for(int i = 0; i = numDeudor; i++){
+        for(int i = 0; i < numDeudor; i++){
             System.out.println("       Deudor id:   "   + deudor[i].getId());
             System.out.println("   Deudor nombre:   "   + deudor[i].getNombre());
             System.out.println("Deudor Direccion:   "   + deudor[i].getDireccion());
@@ -67,8 +67,8 @@ public class PagaMe {
     }
     
     public void init(){ //Inicializacion
-       deudor (numDeudor) = new Deudor(1, "Miguel Perez", "Calle Test 123", -4000.1f);
+       deudor [numDeudor] = new Deudor(1, "Miguel Perez", "Calle Test 123", -4000.1f);
        numDeudor++;
-       deudor (numDeudor++) = new Deudor(1, "Andres Manuel Lopez Obrador", "Calle Prueba 321");
+       deudor [numDeudor++] = new Deudor(1, "Andres Manuel Lopez Obrador", "Calle Prueba 321");
     }
 }
